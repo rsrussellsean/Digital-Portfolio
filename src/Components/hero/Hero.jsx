@@ -108,7 +108,7 @@ const Hero = () => {
         Dev Designer Editor
       </motion.div>
       <div className="imageContainer">
-        <img src="/hero.png" alt="" />
+        <img src="./Digital-Portfolio/hero.png" alt="" />
       </div>
     </div>
   );

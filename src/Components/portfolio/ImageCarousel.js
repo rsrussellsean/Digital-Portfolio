@@ -6,51 +6,51 @@ export default function ImageCarousel({ id }) {
   const images = [
     {
       id: 1,
-      img: "/project/alliance2.png",
+      img: "./Digital-Portfolio/project/alliance2.png",
     },
     {
       id: 1,
-      img: "/project/alliance4.png",
+      img: "./Digital-Portfolio/project/alliance4.png",
     },
     {
       id: 1,
-      img: "/project/alliance3.png",
+      img: "./Digital-Portfolio/project/alliance3.png",
     },
     {
       id: 2,
-      img: "/project/bgf1.png",
+      img: "./Digital-Portfolio/project/bgf1.png",
     },
     {
       id: 2,
-      img: "/project/bgf2.png",
+      img: "./Digital-Portfolio/project/bgf2.png",
     },
     {
       id: 2,
-      img: "/project/bgf3.png",
+      img: "./Digital-Portfolio/project/bgf3.png",
     },
     {
       id: 3,
-      img: "/project/rd.png",
+      img: "./Digital-Portfolio/project/rd.png",
     },
     {
       id: 3,
-      img: "/project/rd2.png",
+      img: "./Digital-Portfolio/project/rd2.png",
     },
     {
       id: 3,
-      img: "/project/rd3.png",
+      img: "./Digital-Portfolio/project/rd3.png",
     },
     {
       id: 4,
-      img: "/project/en2.png",
+      img: "./Digital-Portfolio/project/en2.png",
     },
     {
       id: 4,
-      img: "/project/en3.png",
+      img: "./Digital-Portfolio/project/en3.png",
     },
     {
       id: 4,
-      img: "/project/en4.png",
+      img: "./Digital-Portfolio/project/en4.png",
     },
   ];
   return (
