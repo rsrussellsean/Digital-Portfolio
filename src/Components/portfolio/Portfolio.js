@@ -65,13 +65,13 @@ const Single = ({ item }) => {
             <div className="logoContainer">
               <a href={item.link} target="_blank">
                 <img
-                  src="./Digital-Portfolio/logo/behance.png"
+                  src="/Digital-Portfolio/logo/behance.png"
                   style={{ width: "40px" }}
                 ></img>
               </a>
               <a href={item.link2} target="_blank">
                 <img
-                  src="./Digital-Portfolio/logo/figma.png"
+                  src="/Digital-Portfolio/logo/figma.png"
                   style={{ width: "40px", marginLeft: "10px" }}
                 ></img>
               </a>

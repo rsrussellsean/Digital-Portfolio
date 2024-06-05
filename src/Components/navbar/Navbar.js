@@ -20,13 +20,13 @@ const Navbar = () => {
             <img src="/Digital-Portfolio/facebook.png" alt="" />
           </a>
           <a href="#">
-            <img src="linkedin.png" alt="" />
+            <img src="/Digital-Portfolio/linkedin.png" alt="" />
           </a>
           <a href="#">
-            <img src="./instagram.png" alt="" />
+            <img src="/Digital-Portfolio/instagram.png" alt="" />
           </a>
           <a href="#">
-            <img src="./Digital-Portfolio/dribbble.png" alt="" />
+            <img src="/Digital-Portfolio/dribbble.png" alt="" />
           </a>
         </div>
       </div>
