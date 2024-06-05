@@ -34,6 +34,9 @@ const Navbar = () => {
           <a href="https://dribbble.com/rsrussellsean" target="_blank">
             <img src="/Digital-Portfolio/dribbble.png" alt="" />
           </a>
+          <a href="https://github.com/rsrussellsean" target="_blank">
+            <img src="/Digital-Portfolio/github.png" alt="" />
+          </a>
         </div>
       </div>
     </div>
