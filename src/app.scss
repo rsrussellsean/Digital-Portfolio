@@ -1,0 +1,110 @@
+html {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    // font-family: "DM Sans", sans-serif;
+    font-family: "madeRegular";
+    // font-family: "grifter";
+    // max-width: 100%;
+    // overflow-x: hidden;
+}
+
+@font-face {
+    font-family: "grifter";
+    // src: url("/grifterbold.otf") format("opentype");
+    src: url("../public/fonts/grifterbold.otf");
+    
+}
+
+
+.grifter{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "grifter";
+}
+
+@font-face {
+    font-family: "madeThin";
+    src: url("../public/fonts/MADEThin.otf") ;
+}
+
+.madeThin{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "madeThin";
+}
+
+@font-face {
+    font-family: "madeMedium";
+    src: url("../public/fonts/MADEMedium.otf") 
+}
+
+.madeMedium{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "madeMedium";
+}
+
+@font-face {
+    font-family: "madeRegular";
+    src: url("../public/fonts/MADERegular.otf") 
+}
+
+.madeRegular{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "madeRegular";
+}
+
+
+body{
+    background-color: #0a0a0a;
+    color: lightgrey;
+    // color: rgb(255, 255, 255);
+    overflow-x:hidden;
+    
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+section{
+    height: 100vh;
+    scroll-snap-align: center;
+}
+
+@mixin mobile {
+    @media only screen and (max-width: 480px) {
+        html, body {
+            overflow-x: hidden;
+        }
+        @content;
+    }
+}
+
+
+
+
+@mixin tablet{
+    @media (max-width: 1024px){
+        @content;
+    }
+}
+
+@mixin desktop{
+    @media (max-width: 1366px){
+        @content;
+    }
+}
