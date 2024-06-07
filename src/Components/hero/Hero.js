@@ -1,7 +1,8 @@
-import React from "react";
+import { React, useState } from "react";
 import "./hero.scss";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import ModalResume from "./ModalResume";
 
 const textVariants = {
   initial: {
@@ -59,6 +60,12 @@ const onButtonClick = () => {
 };
 
 const Hero = () => {
+  const [modalOpen, setModalOpen] = useState(false);
+  const image1Src = `${process.env.PUBLIC_URL}/resume/1.png`;
+  const image2Src = `${process.env.PUBLIC_URL}/resume/2.png`;
+
+  const handleOpen = () => setModalOpen(true);
+  const handleClose = () => setModalOpen(false);
   return (
     <div className="hero">
       <div className="wrapper">
@@ -79,13 +86,26 @@ const Hero = () => {
             Web developer and UI designer
           </motion.h1> */}
           <motion.div variants={textVariants} className="buttons">
-            {/* <a href="#Portfolio"> */}
-            {/* <motion.button variants={textVariants}>
-                SEE THE LATEST WORKS
-              </motion.button> */}
-            <motion.button variants={textVariants} onClick={onButtonClick}>
+            <motion.Button
+              variants={textVariants}
+              variant="contained"
+              color="primary"
+              onClick={handleOpen}
+            >
+              VIEW CV
+            </motion.Button>
+
+            {image1Src && image2Src && (
+              <ModalResume
+                open={modalOpen}
+                onClose={handleClose}
+                images={[image1Src, image2Src]}
+              />
+            )}
+
+            {/* <motion.button variants={textVariants} onClick={onButtonClick}>
               RESUME
-            </motion.button>
+            </motion.button> */}
             {/* </a> */}
             <a href="#Contact">
               <motion.button variants={textVariants}>CONTACT ME</motion.button>

@@ -3,6 +3,7 @@ import "./contact.scss";
 import "../../app.scss";
 import { motion, useInView } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import ModalResume from "../../Components/hero/ModalResume";
 
 const variants = {
   initial: {
@@ -20,6 +21,13 @@ const variants = {
 };
 
 const Contact = () => {
+  const [modalOpen, setModalOpen] = useState(false);
+  const image1Src = `${process.env.PUBLIC_URL}/resume/1.png`;
+  const image2Src = `${process.env.PUBLIC_URL}/resume/2.png`;
+
+  const handleOpen = () => setModalOpen(true);
+  const handleClose = () => setModalOpen(false);
+
   const ref = useRef();
   const formRef = useRef();
   const [error, setError] = useState(false);
@@ -68,6 +76,25 @@ const Contact = () => {
         <motion.div className="item" variants={variants}>
           <h2>PHONE</h2>
           <span className="madeThin">+63 995 092 8478</span>
+        </motion.div>
+
+        <motion.div variants={variants} className="buttons">
+          <motion.Button
+            variants={variants}
+            variant="contained"
+            color="primary"
+            onClick={handleOpen}
+          >
+            VIEW CV
+          </motion.Button>
+
+          {image1Src && image2Src && (
+            <ModalResume
+              open={modalOpen}
+              onClose={handleClose}
+              images={[image1Src, image2Src]}
+            />
+          )}
         </motion.div>
       </motion.div>
       <div className="formContainer">
