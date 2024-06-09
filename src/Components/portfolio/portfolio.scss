@@ -172,3 +172,12 @@
     }
   }
 }
+
+#webLink{
+  transition: all 300ms ease-out;
+}
+
+#webLink:hover{
+  color: white;
+  transition: all 300ms ease-in;
+}

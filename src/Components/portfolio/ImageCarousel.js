@@ -6,50 +6,62 @@ export default function ImageCarousel({ id }) {
   const images = [
     {
       id: 1,
+      img: "/Digital-Portfolio/project/realestate.png",
+    },
+    {
+      id: 1,
+      img: "/Digital-Portfolio/project/realestate2.png",
+    },
+    {
+      id: 1,
+      img: "/Digital-Portfolio/project/realestate3.png",
+    },
+    {
+      id: 2,
       img: "/Digital-Portfolio/project/alliance2.png",
     },
     {
-      id: 1,
+      id: 2,
       img: "/Digital-Portfolio/project/alliance4.png",
     },
     {
-      id: 1,
+      id: 2,
       img: "/Digital-Portfolio/project/alliance3.png",
     },
     {
-      id: 2,
+      id: 3,
       img: "/Digital-Portfolio/project/bgf1.png",
     },
     {
-      id: 2,
+      id: 3,
       img: "/Digital-Portfolio/project/bgf2.png",
     },
     {
-      id: 2,
+      id: 3,
       img: "/Digital-Portfolio/project/bgf3.png",
     },
     {
-      id: 3,
+      id: 4,
       img: "/Digital-Portfolio/project/rd.png",
     },
     {
-      id: 3,
+      id: 4,
       img: "/Digital-Portfolio/project/rd2.png",
     },
     {
-      id: 3,
+      id: 4,
       img: "/Digital-Portfolio/project/rd3.png",
     },
     {
-      id: 4,
+      id: 5,
       img: "/Digital-Portfolio/project/en2.png",
     },
     {
-      id: 4,
+      id: 5,
       img: "/Digital-Portfolio/project/en3.png",
     },
     {
-      id: 4,
+      id: 5,
       img: "/Digital-Portfolio/project/en4.png",
     },
   ];
