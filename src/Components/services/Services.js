@@ -65,6 +65,7 @@ const Services = () => {
       initial="initial"
       animate="animate"
       ref={ref}
+      whileInView="animate"
     >
       <motion.div className="textContainer" variants={variants}>
         <div className="introContainer">
@@ -73,25 +74,25 @@ const Services = () => {
             <p>I'm Russell, based in Philippines. </p>
             <p>I am a passionate and creative</p>
             <p>web developer with experience</p>
-            <p>in creating highly polished interfaces</p>
-            <p>and web applications.</p>
+            <p>in creating highly polished</p>
+            <p>interfaces and web applications.</p>
+            <br></br>
+            <p>I am also a QA Automation Engineer</p>
+            <p>where I implemented automated</p>
+            <p>testing that have reduced testing time.</p>
+            <br />
+            <p>So you could say I am an all around</p>
+            <p>Web Developer.</p>
           </div>
           <div className="job">
             <p className="madeThin">FULL STACK WEB DEVELOPER</p>
             <p className="madeThin">UI DESIGNER</p>
+            <p className="madeThin">QA AUTOMATION ENGINEER</p>
           </div>
         </div>
 
         <div className="skillsContainer">
-          <hr
-            className="hrVertical"
-            style={{
-              width: "1px",
-              height: "56%",
-              display: "inlineBlock",
-              position: "absolute",
-            }}
-          />
+          <hr className="hrVertical" />
           <div style={{ paddingLeft: "10px" }}>
             <motion.h2
               variants={variants}
@@ -112,9 +113,10 @@ const Services = () => {
             </motion.h2>
             <motion.h2
               className="grifter text"
-              whileHover={{ duration: 5 }}
               onHoverStart={() => setIsHovered(true)}
+              whileHover={{ duration: 10, ease: "linear" }}
               onHoverEnd={() => setIsHovered(false)}
+              // transition={{ type: "spring", stiffness: 400, damping: 10 }}
               style={
                 isHovered
                   ? {
@@ -130,9 +132,10 @@ const Services = () => {
             </motion.h2>
             <motion.h2
               className="grifter text3"
-              whileHover={{ duration: 5 }}
+              // transition={{ duration: 2, ease: "linear" }}
               onHoverStart={() => setIsHovered(true)}
               onHoverEnd={() => setIsHovered(false)}
+              whileHover={{ duration: 10, ease: "linear" }}
               style={
                 isHovered
                   ? { WebkitTextFillColor: "white" }
@@ -170,6 +173,10 @@ const Services = () => {
             <div className="editContainer">
               <p className="desc1">UI DESIGN</p>
               <p className="desc2 madeThin">FIGMA PHOTOSHOP</p>
+            </div>
+            <div className="editContainer">
+              <p className="desc1">QA AUTOMATION</p>
+              <p className="desc2 madeThin">SELENIUM JUnit PYTHON</p>
             </div>
           </div>
         </div>
