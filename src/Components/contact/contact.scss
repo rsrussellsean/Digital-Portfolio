@@ -161,13 +161,16 @@
   .svgContact{
     width:450px; 
     height:450px;
+
     @include mobile {
-      width:200px; 
-      height:200px;
+      width:100vw; 
+      height:100vw;
       align-items: center;
       justify-content: center;
       text-align: center;
-
+      justify-items: center;
+      margin: auto;
+      padding: auto;
     }
     // viewBox:0 0 32.666 32.666;
   }
