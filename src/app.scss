@@ -103,7 +103,7 @@ section{
 @mixin mobile {
     @media screen and (max-width: 500px) {
         html, body, section {
-            overflow-x: hidden;
+            overflow-x: hidden !important;
         }
         @content;
     }

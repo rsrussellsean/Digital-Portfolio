@@ -30,7 +30,7 @@ const ModalResume = ({ open, onClose, images }) => {
         sx={{
           bgcolor: "background.paper",
           boxShadow: 24,
-          p: 4,
+          p: 2,
           borderRadius: 1,
           // maxWidth: "100%",
           // width: "50%",
@@ -103,7 +103,7 @@ const ModalResume = ({ open, onClose, images }) => {
             variant="contained"
             color="primary"
             onClick={onDownloadClick}
-            sx={{ mt: 2, ml: 6 }}
+            sx={{ mt: 2, ml: { xs: 0, md: 0, lg: 6 } }}
           >
             Download
             <IconButton size="small" sx={{ color: "white" }}>
