@@ -75,7 +75,9 @@ const Contact = () => {
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>PHONE</h2>
-          <span className="madeThin">+63 995 092 8478</span>
+          <span>
+            <p className="madeThin">+63 995 092 8478</p>
+          </span>
         </motion.div>
 
         <motion.div variants={variants} className="buttons">
@@ -84,6 +86,7 @@ const Contact = () => {
             variant="contained"
             color="primary"
             onClick={handleOpen}
+            className="cvButton"
           >
             VIEW CV
           </motion.Button>
@@ -104,7 +107,7 @@ const Contact = () => {
           whileInView={{ opacity: 0 }}
           transition={{ delay: 3, duration: 1 }}
         >
-          <svg width="450px" height="450px" viewBox="0 0 32.666 32.666">
+          <svg className="svgContact" viewBox="0 0 32.666 32.666">
             <motion.path
               strokeWidth={0.2}
               fill="none"

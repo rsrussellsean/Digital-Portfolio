@@ -81,18 +81,10 @@ const Hero = () => {
           <motion.h2 variants={textVariants} className="grifter text2">
             RUSSELL
           </motion.h2>
-          <span className="devText">
-            <motion.h1
-              className="change-text"
-              style={{
-                fontSize: "15%",
-                margin: "auto 0",
-                alignContent: "center",
-              }}
-              variants={textVariants}
-            >
+          <div className="devText">
+            <motion.p className="change-text" variants={textVariants}>
               CREATIVE DEVELOPER
-            </motion.h1>
+            </motion.p>
             {/* <motion.h1
               className="change-text"
               style={{ marginLeft: "180px" }}
@@ -100,7 +92,7 @@ const Hero = () => {
             >
               DEVELOPER
             </motion.h1> */}
-          </span>
+          </div>
           {/* <motion.h1 variants={textVariants}>
             Web developer and UI designer
           </motion.h1> */}
@@ -135,6 +127,7 @@ const Hero = () => {
             animate="scrollButton"
             src="/Digital-Portfolio/scroll.png"
             alt=""
+            className="scrollImg"
           />
         </motion.div>
       </div>

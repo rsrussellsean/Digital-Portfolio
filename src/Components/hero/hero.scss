@@ -10,10 +10,23 @@
   position: relative;
   z-index: 2;
 
+  
+
   .wrapper {
     max-width: 1366px;
     height: 100%;
     margin: auto;
+
+    @include mobile{   
+      overflow-x: hidden;
+    }
+
+    @include laptop{
+      overflow-x: hidden;
+      // max-width: 1000px;
+      max-width: 80vw;
+    }
+
 
     .textContainer {
       width: 50%;
@@ -30,6 +43,11 @@
         align-items: center;
         text-align: center;
       }
+
+      // @include laptop {
+      //   margin-left: 10%;
+        
+      // }
 
       h2 {
         font-size: 100px;
@@ -75,7 +93,16 @@
           cursor: pointer;
           font-weight: 300;
           z-index: 2;
+
+          @include mobile{
+            font-size: 12px;
+            margin-right: 0;
+            padding: 18px;
+            margin-right: 16px;
+
+          }
         }
+
       }
 
       img {
@@ -104,16 +131,25 @@
       padding: 20px 250px 0 0;
 
       @include mobile {
-        // margin-top: 5%;
-        height: calc(50vh - 50px);
         padding: 10% 0 0 0;
-        max-width: 50%;
+        max-width: 60vw;
         margin-left: auto;
         margin-right: auto;
         display: block;
-
-        
+        height: auto;
       }
+
+      @include laptop{
+        padding: 0 100px 0 0;
+      }
+
+      
+    }
+  }
+  
+  .scrollImg{
+    @include mobile {
+      display: none;
 
     }
   }
@@ -127,6 +163,12 @@
     width: 50%;
     font-weight: bold;
     z-index: -1;
+
+    @include mobile{
+      font-size: 40vh;
+      bottom: -100px;
+
+    }
   }
 
   a{
@@ -139,7 +181,14 @@
   display: flex;
   gap: 15px;
   padding:20px 0 ;
-  font-size: 200px;
+  font-size: 30px;
+
+  @include mobile{
+    padding:20px 0 ;
+    font-size: 15px;
+    justify-content: center;
+
+  }
   // margin: auto 0;
   // justify-content: center;
   // align-content:center;
@@ -149,11 +198,11 @@
 
 
 .change-text {
-  font-size: 30pt;
-  
+  // font-size: 30pt;
+
   color: lightgrey;
   animation-name: fontChange;
-  animation-duration: 2.5s;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
   margin: auto 0;
   justify-content: center;
@@ -163,40 +212,46 @@
 
 }
 
+
+.change-text p{
+  @include mobile{
+font-size: 10px;  }
+}
+
 @keyframes fontChange {
   0% {
     font-family: madeRegular;
-    // font-size: 30px;
-
+  }
+  10% {
+    font-family: 'Playfair Display', serif;
   }
   20% {
-    font-family: 'Playfair Display', serif;
-    // animation-timing-function: steps(1, jump-both);
-    
-    // font-size: 40px;
+    font-family: 'Cinzel Decorative';
+
+  }
+  30% {
+    font-family: 'Cutive Mono';
 
   }
   40% {
-    font-family: 'Cinzel Decorative';
-    // font-size: 30px;
-
-
-  }
-  60% {
-    font-family: 'Cutive Mono';
-    // font-size: 30px;
-
-  }
-  80% {
     font-family: 'Press Start 2P Display';
-    // font-size: 30px;
 
   }
-  100% {
-    // font-family: 'Tiny5';
+  50% {
+    font-family: 'Tiny5';
+  }
+
+  60% {
+    font-family: 'madeRegular';
+  }
+
+  80% {
     font-family: 'madeRegular';
 
-    // font-size: 30px;
+  }
+
+  100% {
+    font-family: 'madeRegular';
   }
 
   

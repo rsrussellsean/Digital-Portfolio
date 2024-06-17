@@ -16,6 +16,14 @@
       padding: 20px;
     }
 
+    @include laptop {
+      justify-content: space-between;
+      // padding: 20px;
+      max-width: 80vw;
+
+    }
+    
+
     span {
       font-weight: bold;
 

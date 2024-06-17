@@ -11,6 +11,13 @@
     cursor: pointer;
     font-weight: 300;
     z-index: 2;
+
+    @include mobile{
+      font-size: 12px;
+      margin-right: 0;
+      padding: 18px;
+
+    }
   }
 }
 
@@ -20,14 +27,18 @@
   margin: auto;
   display: flex;
   align-items: center;
-  gap: 50px;
+  // gap: 50px;
   
+  @include laptop{
+    overflow-x: hidden;
+    max-width: 80vw;
+  }
   // width: 100%;
 
 
   @include mobile {
     width: 100%;
-    padding: 10px;
+    // padding: 10px;
     flex-direction: column;
   }
 
@@ -46,11 +57,44 @@
 
     h1 {
       font-size: 100px;
-      line-height: 88px;
+      // line-height: 88px;
       color: rgb(233, 233, 233);
 
       @include mobile {
-        font-size: 36px;
+        font-size: 20px;
+      }
+      @include laptop {
+        font-size: 60px;
+      }
+    }
+
+    h2 {
+      // font-size: 100px;
+      // line-height: 88px;
+      // color: rgb(233, 233, 233);
+
+      @include mobile {
+        font-size: 18px;
+      }
+
+      @include laptop {
+        font-size: 20px;
+      }
+    }
+
+    p{
+      @include mobile {
+        font-size: 16px;
+      }
+      @include laptop {
+        font-size: 18px;
+      }
+    }
+
+    .cvButton{
+      @include mobile {
+        margin-top: 20px;
+        // font-size: 10px !important;
       }
     }
 
@@ -64,8 +108,11 @@
     position: relative;
     
     @include mobile {
-      padding: 50px;
-      width: 100%;
+      // padding: 50px;
+      width: 80%;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
     }
 
 
@@ -80,6 +127,10 @@
       display: flex;
       flex-direction: column;
       gap: 20px;
+
+      @include mobile {
+        margin-top: 0;
+      }
 
       input,
       textarea {
@@ -105,5 +156,19 @@
         }
       }
     }
+  }
+
+  .svgContact{
+    width:450px; 
+    height:450px;
+    @include mobile {
+      width:200px; 
+      height:200px;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+    }
+    // viewBox:0 0 32.666 32.666;
   }
 }

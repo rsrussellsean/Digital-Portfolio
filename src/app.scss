@@ -2,7 +2,7 @@ html {
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
     // cursor: none ;
-
+ 
 }
 
 *{
@@ -11,6 +11,7 @@ html {
     box-sizing: border-box;
     // font-family: "DM Sans", sans-serif;
     font-family: "madeRegular";
+    
     // font-family: "grifter";
     // max-width: 100%;
     // overflow-x: hidden;
@@ -86,15 +87,36 @@ section{
     scroll-snap-align: center;
 }
 
+// @mixin snallmobile {
+//     @media (max-width: 300px) {
+//         html, body, section {
+//             overflow-x: hidden;
+
+//             // display: none;
+//             // font-size: 200px
+
+//         }
+//         @content;
+//     }
+// }
+
 @mixin mobile {
-    @media only screen and (max-width: 480px) {
-        html, body {
+    @media screen and (max-width: 500px) {
+        html, body, section {
             overflow-x: hidden;
         }
         @content;
     }
 }
 
+@mixin laptop {
+    @media screen and (min-width: 500px) and (max-width: 1290px) {
+        html, body, section {
+            overflow-x: hidden;
+        }
+        @content;
+    }
+}
 
 
 

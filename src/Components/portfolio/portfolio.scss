@@ -2,9 +2,26 @@
 
 .portfolio {
   position: relative;
+  background-image: url("../../../public/bgport2.png");
+  background-repeat: no-repeat ;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  background-size: cover !important;
+
+
+  // @include mobile {
+  //   background-repeat: no-repeat ;
+  //   background-size: cover !important;
+  // }
+
+  // @include laptop {
+  //   background-repeat: no-repeat ;
+  //   background-size: cover !important;
+  
+  // }
 
   .progress {
-    position: sticky;
     top: 0;
     left: 0;
     padding-top: 50px;
@@ -14,7 +31,7 @@
 
     @include mobile {
       padding-top: calc(100vh - 100px);
-      display: none !important;
+      // display: none !important;
       
     }
 
@@ -25,37 +42,30 @@
     }
 
     .titleContainer{
-      // line-height: 120%;
-      font-size: 40px;
+      max-width: 1366px;
+      // font-size: 40px;
       flex: 1;
       display: flex;
       align-self: flex-end;
-      // gap: 20px;
-      max-width: 1366px;
       margin: auto;
       text-align: center;
       justify-content: center;
       gap: 20px;
 
       @include mobile {
-        position: relative;
-        top: 0;
-        font-size: 24px;
-        // display: none !important;
-        
+        font-size: 24px;        
       }
+    
       
 
       .text{
         color: white;
         margin: 1px;
-        // position: absolute;
       }
       
       .text2{
         -webkit-text-fill-color: rgba(255, 255, 255, 0);
         -webkit-text-stroke: 0.5px rgb(255, 255, 255);
-        // padding-bottom: 5%;
       }
     }
   }
@@ -69,6 +79,8 @@
     height: 100%;
     overflow: hidden;
 
+    
+
     .wrapper {
       max-width: 1366px;
       height: 100%;
@@ -80,6 +92,10 @@
 
       @include mobile {
         flex-direction: column;
+      }
+
+      @include laptop {
+        width: 80vw;
       }
 
       .imageContainer {
@@ -116,36 +132,56 @@
           padding: 10px;
           align-items: center;
           text-align: center;
-          margin-top: 40px;
+          margin-top: 10%;
           
         }
 
+        @include laptop {
+          justify-content: center;
+          // align-items: center;
+          margin-top: 5%;
+
+        }
+
         .text{
-                color: white;
-                margin: 1px;
-                // position: absolute;
-              }
+          color: white;
+          margin: 1px;
+          // position: absolute;
+        }
               
-              .text2{
-                -webkit-text-fill-color: rgba(255, 255, 255, 0);
-                -webkit-text-stroke: 0.5px rgb(255, 255, 255);
-                // padding-bottom: 5%;
-              }
+        .text2{
+          -webkit-text-fill-color: rgba(255, 255, 255, 0);
+          -webkit-text-stroke: 0.5px rgb(255, 255, 255);
+          // padding-bottom: 5%;
+        }
 
         h2 {
           font-size: 50px;
           color: rgb(228, 228, 228);
           @include mobile {
-            font-size: 28px !important;
+            font-size: 20px !important;
+          }
+
+          @include laptop {
+            font-size: 30px !important;
           }
         }
 
         p {
           color: rgb(223, 223, 223);
           font-size: 20px;
+          text-align: justify;
 
           @include mobile {
             font-size: 14px !important;
+            text-align: justify;
+            width: 85vw;
+          }
+        }
+
+        a{
+          @include mobile {
+            font-size: 12px !important;
           }
         }
 
@@ -180,4 +216,12 @@
 #webLink:hover{
   color: white;
   transition: all 300ms ease-in;
+}
+
+#logoBehance{
+  // height: 5% !important;
+  width: 40px;
+  @include mobile {
+    width: 30px;
+  }
 }

@@ -1,6 +1,13 @@
+@import "../../app.scss";
+
 .ImageCarousel {
     font-family: sans-serif;
     text-align: center;
+
+    @include mobile{
+      margin-top: 20%;
+    }
+    
   }
   
   .crsl {
@@ -8,6 +15,10 @@
     margin: auto;
     width: auto;
     cursor: pointer;
-    
+
+    @include mobile{
+      margin: auto;
+      width: 70%;
+    }
 }
   

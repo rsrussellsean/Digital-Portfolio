@@ -29,6 +29,10 @@
       @include mobile {
         font-size: 50px;
       }
+
+      @include laptop {
+        font-size: 60px;
+      }
     }
     
     .text{
@@ -55,6 +59,9 @@
       @include mobile {
         font-size: 30px;
       }
+      @include laptop {
+        font-size: 30px;
+      }
       
     }
 
@@ -62,6 +69,10 @@
       font-size: 20px;
        @include mobile {
         font-size: 12px;
+      }
+
+      @include laptop {
+        font-size: 18px;
       }
     }
 
@@ -72,6 +83,16 @@
 
     .intro p{
       width: 22vw;
+      @include mobile {
+        width: 100%;
+        text-align: left;
+      }
+
+      @include laptop {
+        width: 30vw;
+        text-align: justify;
+        margin-right: 20px;
+      }
     }
 
     .desc1{
@@ -85,6 +106,15 @@
 
        @include mobile {
         margin-left: 4%;;
+        margin-right: 0;
+        height: auto;
+
+      }
+
+      @include laptop {
+        // margin-left: 4%;;
+        margin-right: 0;
+        height: auto;
       }
     }
 
@@ -125,4 +155,12 @@
   height: 68%;
   display: inlineBlock;
   position: absolute;
+
+  @include mobile {
+    height: 55vh;
+  }
+
+  @include laptop {
+    height: 85vh;
+  }
 }

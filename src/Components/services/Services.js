@@ -81,9 +81,8 @@ const Services = () => {
               testing that have reduced testing time.
               <br />
               <br />
-              So you could say I am an all around
-              <br />
-              Web Developer.
+              So you could say I am an all around Web Developer.
+              {/* <br /> */}
             </p>
             {/* <p>I'm Russell, based in Philippines. </p>
             <p>I am a passionate and creative</p>

@@ -17,7 +17,8 @@
     background: white;
 
     @include mobile {
-      width: 200px;
+      width: 50%;
+      
     }
 
     .links {
@@ -52,5 +53,7 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+
+    
   }
 }
