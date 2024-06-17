@@ -71,7 +71,21 @@ const Services = () => {
         <div className="introContainer">
           <h3>Hello!</h3>
           <div className="intro">
-            <p>I'm Russell, based in Philippines. </p>
+            <p>
+              I'm Russell, based in Philippines. I am a passionate and creative
+              web developer with experience in creating highly polished
+              interfaces and web applications.
+              <br />
+              <br />
+              I am also a QA Automation Engineer where I implemented automated
+              testing that have reduced testing time.
+              <br />
+              <br />
+              So you could say I am an all around
+              <br />
+              Web Developer.
+            </p>
+            {/* <p>I'm Russell, based in Philippines. </p>
             <p>I am a passionate and creative</p>
             <p>web developer with experience</p>
             <p>in creating highly polished</p>
@@ -82,7 +96,7 @@ const Services = () => {
             <p>testing that have reduced testing time.</p>
             <br />
             <p>So you could say I am an all around</p>
-            <p>Web Developer.</p>
+            <p>Web Developer.</p> */}
           </div>
           <div className="job">
             <p className="madeThin">FULL STACK WEB DEVELOPER</p>

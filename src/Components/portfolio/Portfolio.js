@@ -7,7 +7,7 @@ import ImageCarousel from "./ImageCarousel";
 const items = [
   {
     id: 1,
-    title: "Real Estate Hansen Partners Services Page",
+    title: "Real Estate Hansen Partners Services",
     img: "/project/realestate.png",
     desc: "Hansen Partners is a leading real estate website. As a web designer, I recreated their services with a focus on professionalism and creativity. Feel free to explore the redesigned website to see the enhancements firsthand.",
     link: "https://www.behance.net/gallery/200621129/Real-Estate-Services-Page",

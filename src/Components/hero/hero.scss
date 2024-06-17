@@ -1,5 +1,8 @@
 @import "../../app.scss";
 
+// @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300&family=Kaushan+Script&family=Lobster&family=Major+Mono+Display&family=Ranchers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cutive+Mono&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Press+Start+2P&family=Tiny5&display=swap');
+
 .hero {
   height: calc(100vh - 100px);
   overflow: hidden;
@@ -68,6 +71,7 @@
           background-color: transparent;
           color: white;
           margin-right: 20px;
+          margin-top: 20px;
           cursor: pointer;
           font-weight: 300;
           z-index: 2;
@@ -129,4 +133,71 @@
     cursor: pointer;
 
   }
+}
+
+.devText{
+  display: flex;
+  gap: 15px;
+  padding:20px 0 ;
+  font-size: 200px;
+  // margin: auto 0;
+  // justify-content: center;
+  // align-content:center;
+  // text-align: center;
+  // font-size: 200px;
+}
+
+
+.change-text {
+  font-size: 30pt;
+  
+  color: lightgrey;
+  animation-name: fontChange;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  margin: auto 0;
+  justify-content: center;
+  align-content:center;
+  text-align: center;
+  position: absolute;
+
+}
+
+@keyframes fontChange {
+  0% {
+    font-family: madeRegular;
+    // font-size: 30px;
+
+  }
+  20% {
+    font-family: 'Playfair Display', serif;
+    // animation-timing-function: steps(1, jump-both);
+    
+    // font-size: 40px;
+
+  }
+  40% {
+    font-family: 'Cinzel Decorative';
+    // font-size: 30px;
+
+
+  }
+  60% {
+    font-family: 'Cutive Mono';
+    // font-size: 30px;
+
+  }
+  80% {
+    font-family: 'Press Start 2P Display';
+    // font-size: 30px;
+
+  }
+  100% {
+    // font-family: 'Tiny5';
+    font-family: 'madeRegular';
+
+    // font-size: 30px;
+  }
+
+  
 }

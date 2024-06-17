@@ -81,7 +81,26 @@ const Hero = () => {
           <motion.h2 variants={textVariants} className="grifter text2">
             RUSSELL
           </motion.h2>
-          <motion.h1 variants={textVariants}>CREATIVE DEVELOPER</motion.h1>
+          <span className="devText">
+            <motion.h1
+              className="change-text"
+              style={{
+                fontSize: "15%",
+                margin: "auto 0",
+                alignContent: "center",
+              }}
+              variants={textVariants}
+            >
+              CREATIVE DEVELOPER
+            </motion.h1>
+            {/* <motion.h1
+              className="change-text"
+              style={{ marginLeft: "180px" }}
+              variants={textVariants}
+            >
+              DEVELOPER
+            </motion.h1> */}
+          </span>
           {/* <motion.h1 variants={textVariants}>
             Web developer and UI designer
           </motion.h1> */}
