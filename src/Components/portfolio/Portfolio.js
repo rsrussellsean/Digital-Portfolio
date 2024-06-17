@@ -78,7 +78,7 @@ const Single = ({ item }) => {
               {item.linkWeb == "" ? (
                 <></>
               ) : (
-                <div style={{ marginBottom: "20px" }}>
+                <div>
                   <a id="webLink" href={item.linkWeb} target="_blank">
                     Link: {item.linkWeb}
                   </a>
