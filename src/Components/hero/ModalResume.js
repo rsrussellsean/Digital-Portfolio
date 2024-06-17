@@ -3,6 +3,7 @@ import { Button, Modal, Box, Typography } from "@mui/material";
 import { IconButton } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import DownloadIcon from "@mui/icons-material/Download";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 const onDownloadClick = () => {
   const pdfUrl = "Gonzalve_Resume.pdf";
@@ -15,6 +16,8 @@ const onDownloadClick = () => {
 };
 
 const ModalResume = ({ open, onClose, images }) => {
+  const matches = useMediaQuery("(max-width: 500px)");
+
   return (
     <Modal
       open={open}
@@ -29,12 +32,22 @@ const ModalResume = ({ open, onClose, images }) => {
           boxShadow: 24,
           p: 4,
           borderRadius: 1,
-          maxWidth: "80%",
-          width: "50%",
+          // maxWidth: "100%",
+          // width: "50%",
+          width: {
+            xs: "80%",
+            // sm: "75%",
+            md: "60%",
+            lg: "50%",
+            // xl: "30%",
+          },
+
           height: "80%",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
+          justifyContent: "center",
+          margin: "auto",
         }}
       >
         <Box
