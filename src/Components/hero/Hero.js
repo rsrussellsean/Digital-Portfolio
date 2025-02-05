@@ -62,7 +62,7 @@ const onButtonClick = () => {
 const Hero = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const image1Src = `${process.env.PUBLIC_URL}/resume/1.png`;
-  const image2Src = `${process.env.PUBLIC_URL}/resume/2.png`;
+  // const image2Src = `${process.env.PUBLIC_URL}/resume/2.png`;
 
   const handleOpen = () => setModalOpen(true);
   const handleClose = () => setModalOpen(false);
@@ -106,11 +106,18 @@ const Hero = () => {
               VIEW CV
             </motion.Button>
 
-            {image1Src && image2Src && (
+            {/* {image1Src && image2Src && (
               <ModalResume
                 open={modalOpen}
                 onClose={handleClose}
                 images={[image1Src, image2Src]}
+              />
+            )} */}
+            {image1Src && (
+              <ModalResume
+                open={modalOpen}
+                onClose={handleClose}
+                images={[image1Src]}
               />
             )}
 
