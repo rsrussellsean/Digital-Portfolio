@@ -22,8 +22,8 @@ const variants = {
 
 const Contact = () => {
   const [modalOpen, setModalOpen] = useState(false);
-  const image1Src = `${process.env.PUBLIC_URL}/resume/1.png`;
-  const image2Src = `${process.env.PUBLIC_URL}/resume/2.png`;
+  const image1Src = `${process.env.PUBLIC_URL}/resume/1.jpg`;
+  // const image2Src = `${process.env.PUBLIC_URL}/resume/2.png`;
 
   const handleOpen = () => setModalOpen(true);
   const handleClose = () => setModalOpen(false);
