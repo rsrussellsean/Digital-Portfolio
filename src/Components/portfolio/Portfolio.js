@@ -47,7 +47,7 @@ const items = [
     img: "/project/g1.png",
     desc: "CueSync is a rhythm game aimed towards players that want to experience and challenge a rhythm game without a need to look at the screen. It is designed so that players will be immersed in the gameplay without a need of visual feedback and interface.",
     tech: "Tech Stack: Unity, C#",
-    link: "https://www.behance.net/gallery/200256661/Radiant",
+    link: "https://www.behance.net/gallery/219540369/CueSync",
     linkWeb:
       "https://drive.google.com/file/d/1D_2-DuX0GQ0p2Yl5cewGmV8dEydDyCk3/view?usp=sharing",
   },
