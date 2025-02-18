@@ -7,38 +7,61 @@ import ImageCarousel from "./ImageCarousel";
 const items = [
   {
     id: 1,
+    title: "AI Chatbot",
+    img: "/project/ai1.png",
+    desc: "I created an AI Chat clone out of curiosity about how AI chatbots like ChatGPT work. The website features a sleek design, smooth user experience, and smart AI responses.",
+    tech: "Tech Stack: React, GenAI",
+    link: "https://www.behance.net/gallery/219538125/AI-Chatbot",
+    linkWeb: "https://rsrussellsean.github.io/AIChat/",
+  },
+  {
+    id: 2,
     title: "Real Estate Hansen Partners",
     img: "/project/realestate.png",
     desc: "Hansen Partners is a leading real estate website. As a web designer, I recreated their services with a focus on professionalism and creativity. Feel free to explore the redesigned website to see the enhancements firsthand.",
+    tech: "Tech Stack: HTML, CSS",
     link: "https://www.behance.net/gallery/200621129/Real-Estate-Services-Page",
     linkWeb: "https://rsrussellsean.github.io/Real-Estate/",
   },
   {
-    id: 2,
+    id: 3,
     title: "Alliance Subscription Monitoring",
     img: "/project/alliance.png",
     desc: "Alliance Subscription Monitoring provides the insights and control needed to keep your operations running smoothly and efficiently. Enhance your subscription management process with our intuitive and powerful solution.",
+    tech: "Tech Stack: React, .NET",
     link: "https://www.behance.net/gallery/200255943/Alliance-Subscription-Monitoring",
     linkWeb: "",
   },
   {
-    id: 3,
+    id: 4,
     title: "BarangayMed",
     img: "/project/brgymed.png",
     desc: "Barangay Med is a community-focused medical appointment platform designed to provide free healthcare access to residents within their barangay.",
+    tech: "Tech Stack: React, Node",
     link: "https://www.behance.net/gallery/200256313/BarangayMed",
     linkWeb: "",
   },
   {
-    id: 4,
+    id: 5,
+    title: "CueSync",
+    img: "/project/g1.png",
+    desc: "CueSync is a rhythm game aimed towards players that want to experience and challenge a rhythm game without a need to look at the screen. It is designed so that players will be immersed in the gameplay without a need of visual feedback and interface.",
+    tech: "Tech Stack: Unity, C#",
+    link: "https://www.behance.net/gallery/200256661/Radiant",
+    linkWeb:
+      "https://drive.google.com/file/d/1D_2-DuX0GQ0p2Yl5cewGmV8dEydDyCk3/view?usp=sharing",
+  },
+  {
+    id: 6,
     title: "Radiant",
     img: "/project/rd.png",
     desc: "Radiant is a dynamic and engaging app that combines the thrill of gamification with the noble cause of environmental cleanup. GreenGleam turns eco-friendly activities into exciting challenges and rewarding experiences.",
+    tech: "Tech Stack: Flutter",
     link: "https://www.behance.net/gallery/200256661/Radiant",
     linkWeb: "",
   },
   {
-    id: 5,
+    id: 7,
     title: "EalyNexus",
     img: "/project/ealynexus.png",
     desc: "Discover, connect, and collaborate within the crypto gaming ecosystem on EalyNexus, where the future of gaming and professional networking converge.",
@@ -74,6 +97,7 @@ const Single = ({ item }) => {
           <motion.div className="textContainer" style={{ y }}>
             <h2>{item.title}</h2>
             <p className="madeThin">{item.desc}</p>
+            <p className="madeThin">{item.tech}</p>
             <div className="logoContainer">
               {item.linkWeb == "" ? (
                 <></>
